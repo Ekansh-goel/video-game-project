@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../CSS/layout_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>A&E video game world</title>
+  </head>
+
+  
+  <img
+    src="../assets/Logo/E_A_Logo.png"
+    alt="Lets_play"
+    style="width: 140px; height: 70px"
+  />
+
+  <nav>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="merchandise.html">Merchandise</a>
+      <a href="sign_up.html">Account</a>
+    </div>
+  </nav>
+
+  <body>
+    <div class="header">
+      <img
+        src="../assets/Gif/video-games-game-night.gif"
+        alt="Lets_play"
+        class="gifImage"
+      />
+    </div>
+
+    <marquee width="100%" direction="left" height="100px">
+      🎅🦌🍪🎁🎄<span
+        style="color: red; font-size: larger; background-color: aliceblue"
+      >
+        Christmas sale is going on, get upto 60% off on selected games and other
+        merchandise. </span
+      >🎅🦌🍪🎁🎄
+    </marquee>
+
+    <div class="containe">
+      <div class="game_of_the_month">
+        <h1 style="text-align: center; color: aliceblue">
+          <u>Game of the month</u>
+        </h1>
+        <div class="flexContainer">
+          <div class=pic">
+          <img
+            style="margin-left: 7%"
+            src="../assets/video_games_images/assassins_creed.jpg"
+            alt="assassin's_creed"
+          />
+        </div>
+
+        <div class="description" style="color: white">
+          <h2>
+            In the ninth century AD, Baghdad was at its peak, a world leader in
+            science, art, innovation and commerce. In a busy urban landscape, a
+            young orphan with a tragic past must navigate the streets to
+            survive.
+          </h2>
+        </div>
+      </div>
+      <div style="margin-left: 1%" class="ratings">
+        <span class="fa fa-star checked fa-2xl"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <br />
+        <br />
+      </div>
+      <div class="cost" style="color: aliceblue">cost: 80$</div>
+      <div class="buy_now">
+        <button class="buy_now2" onclick="addToCart(0)">Buy now</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="game_display container">
+      <div class="flexContainer">
+        <div id="game1">
+          <img
+            src="../assets/video_games_images/fallout_76.jpg"
+            alt="fallout_76"
+          />
+        </div>
+        <div class="game_description">
+          <h2>
+            Welcome to Fallout 76, developed by Bethesda Game Studios. You and
+            your fellow Vault Dwellers enter a post-nuclear America 25 years
+            after the bombs fell. Investigate an immense no man's land in this
+            open-world multiplayer expansion to the Aftermath story.
+          </h2>
+        </div>
+      </div>
+      <div class="ratings">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="cost">cost: 80$</div>
+      <div class="buy_now">
+        <button class="buy_now2"  onclick="addToCart(1)">Buy Now</button>
+      </div>
+      <br />
+    </div>
+
+    <div class="container">
+      <div class="flexContainer">
+        <div id="game2">
+          <img
+            src="../assets/video_games_images/mario_party.jpg"
+            alt="mario_party"
+          />
+        </div>
+
+        <div class="game_description">
+          <h2>
+            The party video game Mario Party 9 was created by NDcube and
+            released by Nintendo for the Wii. It was announced at E3 2011 and
+            was the ninth main Mario Party game. It was released in March 2012
+            in North America, Australia, Europe, and Japan.
+          </h2>
+        </div>
+      </div>
+      <div class="ratings">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="cost">cost: 75$</div>
+      <div class="buy_now">
+        <button class="buy_now2">Buy Now</button>
+      </div>
+      <br />
+    </div>
+    <div class="container">
+      <div class="flexContainer">
+        <div id="game3">
+          <img src="../assets/video_games_images/maxpayne.jpg" alt="maxpayne" />
+        </div>
+        <div class="game_description">
+          <h2>
+            Remedy Entertainment and Rockstar Studios created the Max Payne
+            video game series, which is a third-person shooter with elements of
+            neo-noir. Max Payne is the show's protagonist, a New York City
+            police officer who became a vigilante after his family was killed by
+            drug addicts.
+          </h2>
+        </div>
+      </div>
+      <div class="ratings">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="cost">cost: 84$</div>
+      <div class="buy_now">
+        <button class="buy_now2">Buy Now</button>
+      </div>
+      <br />
+    </div>
+    <div class="container">
+      <div class="flexContainer">
+        <div id="game4">
+          <img
+            src="../assets/video_games_images/minecraft.jpg"
+            alt="minecraft"
+          />
+        </div>
+        <div class="game_description">
+          <h2>
+            Build anything from the smallest house to the largest castle as you
+            explore infinite worlds. In the creative mode, you can use as many
+            resources as you want, or you can mine deep into the world in the
+            survival mode to make weapons and armor to fight off dangerous
+            enemies. Explore, create, and survive on your own or with friends
+          </h2>
+        </div>
+      </div>
+      <div class="ratings">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="cost">cost: 99$</div>
+      <div class="buy_now">
+        <button class="buy_now2">Buy Now</button>
+      </div>
+      <br />
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
