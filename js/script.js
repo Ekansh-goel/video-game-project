@@ -1,10 +1,14 @@
 let items_array = [
-    { "name": "Dingo Dog Bones", "id": 1,
-    description:"The best dog bones of all time. Holy crap. Your dog will be begging forthese things I got curious once and ate one myself. Im a fan.",
-     price: 12.99, qty: 1,image:"https://s.cdpn.io/3/dingo-dog-bones.jpg" },
-     { "name": "Nutro™ Adult Lamb and Rice Dog Food", "id": 2,
-     description:"Who doesn't like lamb and rice? We've all hit the halal cart at 3am",
-      price: 45.99, qty: 1,image:"https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png" },
+    { "name": "Assassin's Creed Brotherhood", "id": 1,
+    description:"In the ninth century AD, Baghdad was at its peak, a world leader in science, art, innovation and commerce. In a busy urban landscape, a young orphan with a tragic past must navigate the streets to survive.",
+     price: 80, qty: 1,image:"assassins_creed.jpg" },
+     
+     { "name": "Fallout", "id": 2,
+     description:"Welcome to Fallout 76, developed by Bethesda Game Studios. You and your fellow Vault Dwellers enter a post-nuclear America 25 years after the bombs fell. Investigate an immense no man's land in this open-world multiplayer expansion to the Aftermath story.",
+      price: 45.99, qty: 1,image:"fallout_76.jpg" },
+      { "name": "Mario", "id": 2,
+     description:"The party video game Mario Party 9 was created by NDcube and released by Nintendo for the Wii. It was announced at E3 2011 and was the ninth main Mario Party game. It was released in March 2012 in North America, Australia, Europe, and Japan.",
+      price: 75, qty: 1,image:"fallout_76.jpg" },
      
 ];
 
@@ -13,6 +17,7 @@ var cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart"
 // localStorage.setItem("cart", []);
 function addToCart(index) {
     cart.push(items_array[index]);
+    localStorage.setItem("cart", []);
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 function $(container) {
@@ -48,7 +53,7 @@ function displayCart(items) {
         let product_img = createNode("div");
         product_img.className="product-image";
         const img = document.createElement("img");
-        img.src = item.image;
+        img.src = '../assets/video_games_images/'+item.image;
         
         let productName = createNode("div");
         productName.className="product-details";
