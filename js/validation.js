@@ -162,9 +162,9 @@ $('input[name=username]').on('input',function () {
         // check weather input field is empty or not
         usernameError.innerHTML = "Please enter username";
         return true
-    }else if(!/^[a-zA-Z ]+$/.test(username)){
+    }else if(username.length<5){
         // check using regex wheather username is character or only
-        usernameError.innerHTML = "username must contains character only";
+        usernameError.innerHTML = "username must contains 5 character";
         return true
     }else{
         usernameError.innerHTML = ""
