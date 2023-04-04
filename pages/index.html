@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    
     <title>A&E video game world</title>
   </head>
 
@@ -25,6 +26,7 @@
       <a class="active" href="index.html">Home</a>
       <a href="merchandise.html">Merchandise</a>
       <a href="sign_up.html">Account</a>
+      <a href="cart.html">Cart</a>
     </div>
   </nav>
 
@@ -80,7 +82,7 @@
       </div>
       <div class="cost" style="color: aliceblue">cost: 80$</div>
       <div class="buy_now">
-        <button class="buy_now2" onclick="addToCart(0)">Buy now</button>
+        <button class="buy_now2" onclick="location.href='product.html?product=1';">Buy now</button>
         <br />
         <br />
       </div>
@@ -113,7 +115,7 @@
       </div>
       <div class="cost">cost: 80$</div>
       <div class="buy_now">
-        <button class="buy_now2"  onclick="addToCart(1)">Buy Now</button>
+        <button class="buy_now2"  onclick="location.href='product.html?product=2';">Buy Now</button>
       </div>
       <br />
     </div>
@@ -145,7 +147,7 @@
       </div>
       <div class="cost">cost: 75$</div>
       <div class="buy_now">
-        <button class="buy_now2">Buy Now</button>
+        <button class="buy_now2"  onclick="location.href='product.html?product=3';">Buy Now</button>
       </div>
       <br />
     </div>
@@ -173,7 +175,7 @@
       </div>
       <div class="cost">cost: 84$</div>
       <div class="buy_now">
-        <button class="buy_now2">Buy Now</button>
+        <button class="buy_now2"  onclick="location.href='product.html?product=4';">Buy Now</button>
       </div>
       <br />
     </div>
@@ -204,10 +206,12 @@
       </div>
       <div class="cost">cost: 99$</div>
       <div class="buy_now">
-        <button class="buy_now2">Buy Now</button>
+        <button class="buy_now2"  onclick="location.href='product.html?product=5';">Buy Now</button>
       </div>
       <br />
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
+  
   </body>
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../CSS/layout_style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>A&E video game world</title>
+</head>
+
+
+<img src="../assets/Logo/E_A_Logo.png" alt="Lets_play" style="width: 140px; height: 70px" />
+
+<nav>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="merchandise.html">Merchandise</a>
+    <a href="sign_up.html">Account</a>
+    <a href="cart.html">Cart</a>
+  </div>
+</nav>
+
+<body onload="getproduct()">
+
+
+  <div class="containe">
+    <h1>Shopping Cart</h1>
+    <main class="product-container">
+
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+          <img id="product_image" src="" alt="">
+          
+        </div>
+  
+  
+        <!-- Right Column -->
+        <div class="right-column">
+  
+          <!-- Product Description -->
+          <div class="product-description">
+
+            <h1 id="product_title"></h1>
+            <p id="product_description"></p>
+          </div>
+  
+          <!-- Product Configuration -->
+          <div class="product-configuration">
+  
+          </div>
+  
+          <!-- Product Pricing -->
+          <div class="product-price">
+            <span id="product_price">0$</span>
+            <a href="javascript:void(0)" id="add_to_cart" class="cart-btn">Add to cart</a>
+          </div>
+          
+        </div>
+      </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

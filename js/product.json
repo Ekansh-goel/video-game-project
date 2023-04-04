@@ -1,0 +1,26 @@
+[
+    {
+      "name":"Assassin's Creed Brotherhood",
+      "id":1,
+      "description":"In the ninth century AD, Baghdad was at its peak, a world leader in science, art, innovation and commerce. In a busy urban landscape, a young orphan with a tragic past must navigate the streets to survive.",
+      "price":80,
+      "qty":1,
+      "image":"assassins_creed.jpg"
+    },
+    {
+      "name":"Fallout",
+      "id":2,
+      "description":"Welcome to Fallout 76, developed by Bethesda Game Studios. You and your fellow Vault Dwellers enter a post-nuclear America 25 years after the bombs fell. Investigate an immense no man's land in this open-world multiplayer expansion to the Aftermath story.",
+      "price":45.99,
+      "qty":1,
+      "image":"fallout_76.jpg"
+    },
+    {
+      "name":"Mario",
+      "id":3,
+      "description":"The party video game Mario Party 9 was created by NDcube and released by Nintendo for the Wii. It was announced at E3 2011 and was the ninth main Mario Party game. It was released in March 2012 in North America, Australia, Europe, and Japan.",
+      "price":75,
+      "qty":1,
+      "image":"mario_party.jpg"
+    }
+  ]

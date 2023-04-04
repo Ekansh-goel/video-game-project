@@ -1,24 +1,27 @@
-let items_array = [
-    { "name": "Assassin's Creed Brotherhood", "id": 1,
-    description:"In the ninth century AD, Baghdad was at its peak, a world leader in science, art, innovation and commerce. In a busy urban landscape, a young orphan with a tragic past must navigate the streets to survive.",
-     price: 80, qty: 1,image:"assassins_creed.jpg" },
-     
-     { "name": "Fallout", "id": 2,
-     description:"Welcome to Fallout 76, developed by Bethesda Game Studios. You and your fellow Vault Dwellers enter a post-nuclear America 25 years after the bombs fell. Investigate an immense no man's land in this open-world multiplayer expansion to the Aftermath story.",
-      price: 45.99, qty: 1,image:"fallout_76.jpg" },
-      { "name": "Mario", "id": 2,
-     description:"The party video game Mario Party 9 was created by NDcube and released by Nintendo for the Wii. It was announced at E3 2011 and was the ninth main Mario Party game. It was released in March 2012 in North America, Australia, Europe, and Japan.",
-      price: 75, qty: 1,image:"fallout_76.jpg" },
-     
-];
+var items_array = [];
+function loadJson() {
+    jQuery.ajax({
+      url: '/js/product.json',
+      async: false,
+      dataType: 'json',
+      success: function (json) {
+        items_array = json;
+      }
+    });
+}
+loadJson()
 
 var cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
 
 // localStorage.setItem("cart", []);
-function addToCart(index) {
-    cart.push(items_array[index]);
+function addToCart(id) {
+    product = items_array.find(x => x.id ==id);
+    
+    if(product){
+    cart.push(product);
     localStorage.setItem("cart", []);
     localStorage.setItem("cart", JSON.stringify(cart));
+    }
 }
 function $(container) {
     return document.getElementById(container);
@@ -33,19 +36,19 @@ function createNode(node) {
     return element;
 };
 
-function displayCart(items) {
+function displayCart() {
     let subtotal = 0;
     let total = 0;
     let tax = 0.05;
     let shipping = 15;
-    let item_container = $("cart");
-    item_container.innerHTML = "";
+    let item_container = document.getElementById("cart");
+    item_container.innerHTML = null;
     let subtotalText = $("cart-subtotal");
     let taxText = $("cart-tax");
     let shippingText = $("cart-shipping");
     let totalText = $("cart-total");
-    for (let i = 0; i < items.length; i++) {
-        let item = items[i];
+    for (let i = 0; i < cart.length; i++) {
+        let item = cart[i];
 
         let item_node = createNode("div");
         item_node.className="product";
@@ -99,7 +102,7 @@ function displayCart(items) {
 
     }
 }
-displayCart(cart)
+
 
 
 function removeItem(index) {
@@ -117,3 +120,26 @@ function changeQuantity(index) {
       localStorage.setItem("cart", JSON.stringify(cart));
       displayCart(cart);
 }
+function getproduct() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const productId = urlParams.get('product')
+    product = items_array.find(x => x.id ==productId);
+    if(product){
+        let product_image = document.getElementById("product_image");
+        product_image.src = '../assets/video_games_images/'+product.image;
+        let product_title = document.getElementById("product_title");
+        product_title.innerText = product.name;
+        let product_description = document.getElementById("product_description");
+        product_description.innerText = product.description;
+        let product_price = document.getElementById("product_price");
+        product_price.innerText = ((product.price).toLocaleString('en-US', {
+            style: 'currency',
+            currency: 'USD',
+          }));
+          let add_to_cart = document.getElementById("add_to_cart");
+          add_to_cart.onclick = function() {     addToCart(productId); };
+    }
+
+}
+
