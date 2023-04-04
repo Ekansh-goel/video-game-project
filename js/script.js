@@ -15,6 +15,7 @@ var cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart"
 
 // localStorage.setItem("cart", []);
 function addToCart(id) {
+   
     product = items_array.find(x => x.id ==id);
     
     if(product){
