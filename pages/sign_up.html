@@ -1,126 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/layout_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>A&E video game world</title>
+  </head>
 
-  <link rel="stylesheet" href="../CSS/layout_style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <title>A&E video game world</title>
-</head>
+  <img
+    src="../assets/Logo/E_A_Logo.png"
+    alt="Lets_play"
+    style="width: 140px; height: 70px"
+  />
 
-<img src="../assets/Logo/E_A_Logo.png" alt="Lets_play" style="width: 140px; height: 70px" />
+  <nav>
+    <div style="text-align: center" class="topnav">
+      <a href="index.html">Home</a>
+      <a href="merchandise.html">Merchandise</a>
+      <a class="active" href="sign_up.html">Account</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </nav>
 
-<nav>
-  <div style="text-align: center" class="topnav">
-    <a href="index.html">Home</a>
-    <a href="merchandise.html">Merchandise</a>
-    <a class="active" href="sign_up.html">Account</a>
-    <a href="cart.html">Cart</a>
-  </div>
-</nav>
+  <body>
+    <div class="header">
+      <img
+        src="../assets/Gif/video-games-game-night.gif"
+        alt="Lets_play"
+        class="gifImage"
+      />
+    </div>
 
-<body>
-  <div class="header">
-    <img src="../assets/Gif/video-games-game-night.gif" alt="Lets_play" class="gifImage" />
-  </div>
-  <marquee width="100%" direction="left" height="100px">
-    🎅🦌🍪🎁🎄<span style="color: red; font-size: x-large">Christmas sale is going on, get upto 60% off on selected
-      games and
-      other merchandise</span>🎅🦌🍪🎁🎄
-  </marquee>
-
-  <div class="signup">
-    <div basic details></div>
-    <form id="myForm">
-      <fieldset style="width: 80%">
-        <legend>Basic information :</legend>
-        <label for="firstname">First name:</label>
-        <input type="text" id="firstname" required name="firstname" /><br />
-        <span id="firstnameError"></span>
+    <div class="signup">
+      <div basic details></div>
+      <form id="myForm">
+        <fieldset style="width: 80%">
+          <legend>Basic information :</legend>
+          <label for="firstname">First name:</label>
+          <input type="text" id="firstname" required name="firstname" /><br />
+          <span id="firstnameError"></span>
+          <br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lastname" required name="lastname" /><br />
+          <span id="lastnameError"></span><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required name="email" /><br />
+          <span id="emailError"></span><br />
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" required name="birthday" /><br />
+          <span id="birthdayError"></span><br />
+        </fieldset>
+        <br /><br />
+        <fieldset style="width: 80%">
+          <legend>login information :</legend>
+          <label for="username"> User name:</label>
+          <input type="text" id="username" required name="username" /><br />
+          <span id="usernameError"></span><br />
+          <label for="password">Password:</label>
+          <input type="password" id="password" required name="password" /><br />
+          <span id="passwordError"></span><br />
+          <label for="re_password">Re-enter the Password:</label>
+          <input
+            type="password"
+            id="re_password"
+            required
+            name="re_password"
+          /><br />
+          <span id="repasswordError"></span><br />
+        </fieldset>
         <br />
-        <label for="lname">Last name:</label>
-        <input type="text" id="lastname" required name="lastname" /><br />
-        <span id="lastnameError"></span><br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" required name="email" /><br />
-        <span id="emailError"></span><br />
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" required name="birthday" /><br />
-        <span id="birthdayError"></span><br />
-        
-      </fieldset>
-      <br /><br />
-      <fieldset style="width: 80%">
-        <legend>login information :</legend>
-        <label for="username"> User name:</label>
-        <input type="text" id="username" required name="username" /><br />
-        <span id="usernameError"></span><br />
-        <label for="password">Password:</label>
-        <input type="password" id="password" required name="password" /><br />
-        <span id="passwordError"></span><br />
-        <label for="re_password">Re-enter the Password:</label>
-        <input type="password" id="re_password" required name="re_password" /><br />
-        <span id="repasswordError"></span><br />
-      </fieldset>
-      <br />
-      <br />
-      <fieldset style="width: 80%">
-        <legend>gaming preferences:</legend>
-        <input type="checkbox" id="Action" name="Action" value="Action" />
-        <label for="Action"> Action</label><br /><br />
+        <br />
+        <fieldset style="width: 80%">
+          <legend>gaming preferences:</legend>
+          <input type="checkbox" id="Action" name="Action" value="Action" />
+          <label for="Action"> Action</label><br /><br />
 
-        <input type="checkbox" id="Action-adventure" name="Action-adventure" value="Action-adventure" />
-        <label for="Action-adventure"> Action-adventure</label><br /><br />
+          <input
+            type="checkbox"
+            id="Action-adventure"
+            name="Action-adventure"
+            value="Action-adventure"
+          />
+          <label for="Action-adventure"> Action-adventure</label><br /><br />
 
-        <input type="checkbox" id="Adventure" name="Adventure" value="Adventure" />
-        <label for="Adventure"> Adventure</label><br /><br />
+          <input
+            type="checkbox"
+            id="Adventure"
+            name="Adventure"
+            value="Adventure"
+          />
+          <label for="Adventure"> Adventure</label><br /><br />
 
-        <input type="checkbox" id="Puzzle" name="Puzzle" value="Puzzle" />
-        <label for="Puzzle"> Puzzle</label><br /><br />
+          <input type="checkbox" id="Puzzle" name="Puzzle" value="Puzzle" />
+          <label for="Puzzle"> Puzzle</label><br /><br />
 
-        <input type="checkbox" id="Role-playing" name="Role-playing" value="Role-playing" />
-        <label for="Role-playing"> Role-playing</label><br /><br />
+          <input
+            type="checkbox"
+            id="Role-playing"
+            name="Role-playing"
+            value="Role-playing"
+          />
+          <label for="Role-playing"> Role-playing</label><br /><br />
 
-        <input type="checkbox" id="Simulation" name="Simulation" value="Simulation" />
-        <label for="Simulation">Simulation</label><br /><br />
+          <input
+            type="checkbox"
+            id="Simulation"
+            name="Simulation"
+            value="Simulation"
+          />
+          <label for="Simulation">Simulation</label><br /><br />
 
-        <input type="checkbox" id="Strategy" name="Strategy" value="Strategy" />
-        <label for="Strategy"> Strategy</label><br /><br />
+          <input
+            type="checkbox"
+            id="Strategy"
+            name="Strategy"
+            value="Strategy"
+          />
+          <label for="Strategy"> Strategy</label><br /><br />
 
-        <input type="checkbox" id="Sports" name="Sports" value="Sports" />
-        <label for="Sports">Sports</label><br /><br />
-      </fieldset>
-      <br /><br />
-      <fieldset style="width: 80%">
-        <legend>News Letter :</legend>
-        <label for="news">Are you intrested in weekly updates in gaming world and knowing
-          about new offers at A&E video game world ? :</label>
-        <select name="news" id="news" required>
-          <option selected="selected" value="yes">Yes</option>
-          <option value="no">no</option>
-        </select>
+          <input type="checkbox" id="Sports" name="Sports" value="Sports" />
+          <label for="Sports">Sports</label><br /><br />
+        </fieldset>
         <br /><br />
-        <label for="terms">I accept all the<a href="terms.html" target="_blank">
-            terms and conditions</a>:</label>
-        <select name="terms" id="terms" required>
-          <option selected="selected" value="yes">Yes</option>
-          <option value="no">no</option>
-        </select>
-        <br /><br />
-      </fieldset>
-      <br />
-      <br />
+        <fieldset style="width: 80%">
+          <legend>News Letter :</legend>
+          <label for="news"
+            >Are you intrested in weekly updates in gaming world and knowing
+            about new offers at A&E video game world ? :</label
+          >
+          <select name="news" id="news" required>
+            <option selected="selected" value="yes">Yes</option>
+            <option value="no">no</option>
+          </select>
+          <br /><br />
+          <label for="terms"
+            >I accept all the<a href="terms.html" target="_blank">
+              terms and conditions</a
+            >:</label
+          >
+          <select name="terms" id="terms" required>
+            <option selected="selected" value="yes">Yes</option>
+            <option value="no">no</option>
+          </select>
+          <br /><br />
+        </fieldset>
+        <br />
+        <br />
 
-      <span>
-        <input class="buy_now2" type="submit" id="register" value="Submit" />
-        <input class="buy_now2" type="reset" value="Reset" /></span>
-    </form>
-  </div>
-  <script src="/js/validation.js"></script>
-</body>
-
+        <span>
+          <input class="buy_now2" type="submit" id="register" value="Submit" />
+          <input class="buy_now2" type="reset" value="Reset"
+        /></span>
+      </form>
+    </div>
+    <script src="/js/validation.js"></script>
+  </body>
 </html>
