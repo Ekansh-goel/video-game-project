@@ -11,11 +11,12 @@ function loadJson() {
 }
 loadJson()
 
+
 var cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
 
 // localStorage.setItem("cart", []);
 function addToCart(id) {
-   
+   alert("item added successfully")
     product = items_array.find(x => x.id ==id);
     
     if(product){
@@ -57,7 +58,8 @@ function displayCart() {
         let product_img = createNode("div");
         product_img.className="product-image";
         const img = document.createElement("img");
-        img.src = '../assets/video_games_images/'+item.image;
+        img.src = '../assets/'+item.image;
+        // image
         
         let productName = createNode("div");
         productName.className="product-details";
@@ -128,7 +130,8 @@ function getproduct() {
     product = items_array.find(x => x.id ==productId);
     if(product){
         let product_image = document.getElementById("product_image");
-        product_image.src = '../assets/video_games_images/'+product.image;
+        product_image.src = '../assets/'+product.image;
+        // image 
         let product_title = document.getElementById("product_title");
         product_title.innerText = product.name;
         let product_description = document.getElementById("product_description");

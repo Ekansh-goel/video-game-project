@@ -5,7 +5,7 @@
       "description":"In the ninth century AD, Baghdad was at its peak, a world leader in science, art, innovation and commerce. In a busy urban landscape, a young orphan with a tragic past must navigate the streets to survive.",
       "price":80,
       "qty":1,
-      "image":"assassins_creed.jpg"
+      "image":"video_games_images/assassins_creed.jpg"
     },
     {
       "name":"Fallout",
@@ -13,7 +13,7 @@
       "description":"Welcome to Fallout 76, developed by Bethesda Game Studios. You and your fellow Vault Dwellers enter a post-nuclear America 25 years after the bombs fell. Investigate an immense no man's land in this open-world multiplayer expansion to the Aftermath story.",
       "price":45.99,
       "qty":1,
-      "image":"fallout_76.jpg"
+      "image":"video_games_images/fallout_76.jpg"
     },
     {
       "name":"Mario",
@@ -21,6 +21,63 @@
       "description":"The party video game Mario Party 9 was created by NDcube and released by Nintendo for the Wii. It was announced at E3 2011 and was the ninth main Mario Party game. It was released in March 2012 in North America, Australia, Europe, and Japan.",
       "price":75,
       "qty":1,
-      "image":"mario_party.jpg"
+      "image":"video_games_images/mario_party.jpg"
+    },
+    {
+      "name":"Max Payne",
+      "id":4,
+      "description":"Remedy Entertainment and Rockstar Studios created the Max Payne video game series, which is a third-person shooter with elements of neo-noir. Max Payne is the show's protagonist, a New York City police officer who became a vigilante after his family was killed by drug addicts.",
+      "price":84,
+      "qty":1,
+      "image":"video_games_images/maxpayne.jpg"
+    },
+    {
+      "name":"Minecraft",
+      "id":5,
+      "description":"Build anything from the smallest house to the largest castle as you explore infinite worlds. In the creative mode, you can use as many resources as you want, or you can mine deep into the world in the survival mode to make weapons and armor to fight off dangerous enemies. Explore, create, and survive on your own or with friends",
+      "price":99,
+      "qty":1,
+      "image":"video_games_images/minecraft.jpg"
+    },
+    {
+      "name":"Assassin's Creed Generation Hoodie",
+      "id":6,
+      "description":"100% Polyester Hoodie: Unisex Color: Black and red Material : 100% Polyester 2 Removable patchs : Apple of Eden and Assassin's Creed Crest print at back",
+      "price":80,
+      "qty":1,
+      "image":"merchandise/assassins_creed_hoodie.jpg"
+    },
+    {
+      "name":"fallout 76 mask",
+      "id":7,
+      "description":"Material PVC Brand Loot Crate Style Modern Item Weight 0.55 Pounds",
+      "price":80,
+      "qty":1,
+      "image":"merchandise/fallout_76_mask.jpg"
+    },
+    {
+      "name":"mario party birthday set",
+      "id":8,
+      "description":"Color Multicolor Material Recycled paper Included Components Happy birthday banner, Ballon, Necessary Accessories, Cake topper",
+      "price":75,
+      "qty":1,
+      "image":"merchandise/mario_party_birthday_set.jpg"
+    },
+    {
+      "name":"max_payne_tshirt",
+      "id":9,
+      "description":"100% Polyester t-shirt: Unisex Color: Black and red Material : 100% Cotton",
+      "price":84,
+      "qty":1,
+      "image":"merchandise/max_payne_tshirt.jpg"
+    },
+    {
+      "name":"minecrafthoodie",
+      "id":10,
+      "description":"Medium-10/12, Large-14/16 and X-Large-16/18 t-shirt: Unisex Machine Wash OFFICIALLY LICENSED MINECRAFT PRODUCT: Material : 100% Cotton",
+      "price":99,
+      "qty":1,
+      "image":"merchandise/minecrafthoodie.jpg"
     }
+    
   ]

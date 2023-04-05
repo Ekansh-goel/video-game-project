@@ -15,7 +15,7 @@ body {
   justify-content: center;
   margin: 20px;
 }
-.accordion_593 {
+.accordion {
   background-color: #6ba2e5;
   color: black;
   cursor: pointer;
@@ -38,13 +38,17 @@ body {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
+.legal{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+}
 .active,
-.accordion_593:hover {
+.accordion:hover {
   background-color: #72e15c;
 }
 
-.accordion_593:after {
+.accordion:after {
   content: "\002B";
   color: #777;
   font-weight: bold;
