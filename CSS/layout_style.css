@@ -15,6 +15,42 @@ body {
   justify-content: center;
   margin: 20px;
 }
+.accordion_593 {
+  background-color: #6ba2e5;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.active,
+.accordion_593:hover {
+  background-color: #72e15c;
+}
+
+.accordion_593:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
 
 .gifImage {
   width: 30%;
@@ -107,7 +143,6 @@ body {
   font-style: italic;
 }
 
-
 /* Global settings */
 /* Global "table" column settings */
 .product-image {
@@ -122,7 +157,6 @@ body {
 
 .product-price {
   float: left;
-
 }
 
 .product-quantity {
@@ -142,7 +176,8 @@ body {
 }
 
 /* This is used as the traditional .clearfix class */
-.group:before, .shopping-cart:before,
+.group:before,
+.shopping-cart:before,
 .column-labels:before,
 .product:before,
 .totals-item:before,
@@ -155,14 +190,16 @@ body {
   display: table;
 }
 
-.group:after, .shopping-cart:after,
+.group:after,
+.shopping-cart:after,
 .column-labels:after,
 .product:after,
 .totals-item:after {
   clear: both;
 }
 
-.group, .shopping-cart,
+.group,
+.shopping-cart,
 .column-labels,
 .product,
 .totals-item {
@@ -180,7 +217,8 @@ body {
 /* Body/Header stuff */
 body {
   padding: 0px 30px 30px 20px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 
@@ -376,7 +414,6 @@ label {
   margin-top: 60px;
 }
 
-
 /* Left Column */
 .left-column img {
   width: 600px;
@@ -388,18 +425,16 @@ label {
   transition: all 0.3s ease;
 }
 
-
-
 /* Right Column */
 
 /* Product Description */
 .product-description {
-  border-bottom: 1px solid #E1E8EE;
+  border-bottom: 1px solid #e1e8ee;
   margin-bottom: 20px;
 }
 .product-description span {
   font-size: 12px;
-  color: #358ED7;
+  color: #358ed7;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
@@ -407,13 +442,13 @@ label {
 .product-description h1 {
   font-weight: 300;
   font-size: 52px;
-  color: #43484D;
+  color: #43484d;
   letter-spacing: -2px;
 }
 .product-description p {
   font-size: 16px;
   font-weight: 300;
-  color: #86939E;
+  color: #86939e;
   line-height: 24px;
 }
 
@@ -422,12 +457,10 @@ label {
 .cable-config span {
   font-size: 14px;
   font-weight: 400;
-  color: #86939E;
+  color: #86939e;
   margin-bottom: 20px;
   display: inline-block;
 }
-
-
 
 /* Cable Configuration */
 .cable-choose {
@@ -435,30 +468,30 @@ label {
 }
 
 .cable-choose button {
-  border: 2px solid #E1E8EE;
+  border: 2px solid #e1e8ee;
   border-radius: 6px;
   padding: 13px 20px;
   font-size: 14px;
-  color: #5E6977;
+  color: #5e6977;
   background-color: #fff;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .cable-choose button:hover,
 .cable-choose button:active,
 .cable-choose button:focus {
-  border: 2px solid #86939E;
+  border: 2px solid #86939e;
   outline: none;
 }
 
 .cable-config {
-  border-bottom: 1px solid #E1E8EE;
+  border-bottom: 1px solid #e1e8ee;
   margin-bottom: 20px;
 }
 
 .cable-config a {
-  color: #358ED7;
+  color: #358ed7;
   text-decoration: none;
   font-size: 12px;
   position: relative;
@@ -487,19 +520,19 @@ label {
 .product-price span {
   font-size: 26px;
   font-weight: 300;
-  color: #43474D;
+  color: #43474d;
   margin-right: 20px;
 }
 
 .cart-btn {
   display: inline-block;
-  background-color: #7DC855;
+  background-color: #7dc855;
   border-radius: 6px;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   padding: 12px 30px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .cart-btn:hover {
   background-color: #64af3d;
@@ -531,5 +564,3 @@ label {
     top: -85px;
   }
 }
-
-
