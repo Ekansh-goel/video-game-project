@@ -38,7 +38,7 @@ body {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-.legal{
+.legal {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 0%;
@@ -69,10 +69,10 @@ body {
   height: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: #5150ed;
-  background: -webkit-linear-gradient(top left, #5150ed, #16052c);
-  background: -moz-linear-gradient(top left, #5150ed, #16052c);
-  background: linear-gradient(to bottom right, #5150ed, #16052c);
+  background: #42a5f5;
+  background: -webkit-linear-gradient(top left, #42a5f5, #16052c);
+  background: -moz-linear-gradient(top left, #42a5f5, #16052c);
+  background: linear-gradient(to bottom right, #42a5f5, #16052c);
 }
 
 .container {
@@ -98,7 +98,7 @@ body {
 .buy_now2 {
   padding: 10px 20px 10px 20px;
   background-color: white;
-  color: #5150ed;
+  color: #42a5f5;
   font-weight: bold;
   border-radius: 10px;
   margin: 10px;
@@ -132,12 +132,12 @@ body {
 }
 
 .topnav a.active {
-  background-color: #5150ed;
+  background-color: #42a5f5;
   color: white;
 }
 
 .buy_now :hover {
-  background-color: rgba(16, 239, 9, 0.666);
+  background-color: #4caf50;
   color: black;
 }
 
@@ -276,14 +276,14 @@ label {
 .product .remove-product {
   border: 0;
   padding: 4px 8px;
-  background-color: #c66;
+  background-color: #ef5350;
   color: #fff;
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
   font-size: 12px;
   border-radius: 3px;
 }
 .product .remove-product:hover {
-  background-color: #a44;
+  background-color: #ef5350;
 }
 
 /* Totals section */
@@ -466,55 +466,6 @@ label {
   display: inline-block;
 }
 
-/* Cable Configuration */
-.cable-choose {
-  margin-bottom: 20px;
-}
-
-.cable-choose button {
-  border: 2px solid #e1e8ee;
-  border-radius: 6px;
-  padding: 13px 20px;
-  font-size: 14px;
-  color: #5e6977;
-  background-color: #fff;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.cable-choose button:hover,
-.cable-choose button:active,
-.cable-choose button:focus {
-  border: 2px solid #86939e;
-  outline: none;
-}
-
-.cable-config {
-  border-bottom: 1px solid #e1e8ee;
-  margin-bottom: 20px;
-}
-
-.cable-config a {
-  color: #358ed7;
-  text-decoration: none;
-  font-size: 12px;
-  position: relative;
-  margin: 10px 0;
-  display: inline-block;
-}
-.cable-config a:before {
-  content: "?";
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  border: 2px solid rgba(53, 142, 215, 0.5);
-  display: inline-block;
-  text-align: center;
-  line-height: 16px;
-  opacity: 0.5;
-  margin-right: 5px;
-}
-
 /* Product Price */
 .product-price {
   display: flex;
@@ -566,5 +517,76 @@ label {
   .left-column img {
     width: 220px;
     top: -85px;
+  }
+}
+
+/*  slide show*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
