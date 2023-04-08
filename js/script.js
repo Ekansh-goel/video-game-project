@@ -16,7 +16,7 @@ var cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart"
 
 // localStorage.setItem("cart", []);
 function addToCart(id) {
-   alert("item added successfully")
+   alert("Item added successfully")
     product = items_array.find(x => x.id ==id);
     
     if(product){
@@ -109,13 +109,13 @@ function displayCart() {
 
 
 function removeItem(index) {
-    alert("item Removed successfully")
+    alert("Item Removed successfully")
     cart.splice(index, 1);
     localStorage.setItem("cart", JSON.stringify(cart));
     displayCart(cart);
 }
 function changeQuantity(index) {
-    alert("item quantitychanged")
+    alert("Item quantity changed")
     newQty = $("qty-"+index).value;
     for (var i = 0; i < cart.length; i++) {
         if (i === index) {
