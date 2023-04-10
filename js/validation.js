@@ -192,6 +192,27 @@ $('input[name=username]').on('input', function () {
         return false
     }
 })
+$('input[name=password]').on('input', function () {
+    let password = getDiv("password").value
+    let passwordError = getDiv("passwordError")
+    if (isStringInValid(password)) {
+        // check if input field is empty or not
+        passwordError.innerHTML = "Please enter password";
+        return true
+    } else if (password.length < 8 || password.length > 20) {
+        // check password length
+        passwordError.innerHTML = "Password must be between 8 and 20 characters";
+        return true
+    } else if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[a-zA-Z\d!@#$%^&*()_+]+$/.test(password)) {
+        // check using regex whether password contains at least one uppercase letter, one lowercase letter, one number and one special character
+        passwordError.innerHTML = "Password must contain at least one uppercase letter, one lowercase letter, one number and one special character";
+        return true
+    } else {
+        passwordError.innerHTML = ""
+        return false
+    }
+})
+
 $('input[name=repassword]').on('input',function () {
     let repassword = getDiv("repassword").value
     let password = getDiv("password").value
@@ -213,7 +234,6 @@ $('input[name=repassword]').on('input',function () {
         return false;
     }
 })
-
 
 // check string is empty or not
 let isStringInValid = (string) => {
